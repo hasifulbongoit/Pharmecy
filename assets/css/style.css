@@ -1,0 +1,558 @@
+/* sidebar section */
+
+.sidebar_section {
+    width: 300px;
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    height: 100vh;
+    z-index: 1024;
+    background: var(--mainColor);
+    transition: var(--transition);
+}
+
+.showNav.sidebar_section {
+    left: 0px;
+}
+
+.sidebar_content {
+    position: relative;
+}
+
+.sidebar_logo {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar_logo_inner {
+    width: 160px;
+    display: flex;
+    height: 50px;
+}
+
+.sidebar_logo_inner img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.sidebar_wrapper {
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    padding: 20px 0px;
+}
+
+.sidebar_navList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar_nav_item {
+    position: relative;
+}
+
+.sidebar_nav_sub {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s;
+    visibility: hidden;
+}
+
+.showSubNav .sidebar_nav_sub {
+    max-height: 400px;
+    visibility: visible;
+}
+
+.sidebar_nav_sub ul {
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 15px;
+    background: rgb(255 255 255 / 10%);
+    padding-right: 15px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: var(--transition);
+    border-radius: 5px;
+}
+
+.sidebar_nav_sub ul li a {
+    padding: 7px 10px;
+    background: rgb(253 206 82 / 10%);
+    display: block;
+    border-radius: 5px;
+    color: var(--globalColor);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sidebar_nav_sub ul li a:hover {
+    background: rgb(253 206 82 / 40%);
+}
+
+.sidebar_nav_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 15px;
+    padding: 9px 15px 9px 15px;
+    background: rgb(0 0 0 / 10%);
+}
+
+.sidebar_nav_link:hover {
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.showSubNav .sidebar_nav_link {
+    background-color: rgb(0 0 0 / 40%);
+}
+
+.sidebar_link_content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sidebar_link_icon {
+    width: 22px;
+}
+
+.sidebar_link_icon img {
+    width: 100%;
+    display: block;
+}
+
+.sidebar_link_text {
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--globalColor);
+    display: flex;
+}
+
+.sidebarlink_arrow {
+    display: flex;
+}
+
+/* admin main */
+
+.admin_main {
+    width: 100%;
+    margin-left: 0px;
+}
+
+.header_section {
+    background: var(--mainColor);
+    padding: 15px 24px;
+}
+
+.header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.header_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.headerinfo_profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headerinfo_profile_name {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--globalColor);
+}
+
+.headerinfo_profile_image {
+    width: 40px;
+    height: 36px;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.headerinfo_profile_image img {
+    width: 100%;
+    display: block;
+}
+
+.adminmain_content {
+    margin: 40px 24px;
+}
+
+/* overveiw section */
+
+.admin_overview {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.admin_overview_card {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.adimnoverview_card_content {
+    padding: 29px 20px;
+}
+
+.admin_overviewCard_image {
+    height: 65px;
+    width: 100%;
+}
+
+.admin_overviewCard_image img {
+    margin: 0px auto 15px;
+    max-width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.admin_overviewCard_total {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    color: var(--textColor);
+    margin-bottom: 15px;
+
+}
+
+.admin_overviewCard_title {
+    font-size: 18px;
+    text-align: center;
+    color: var(--textColor);
+}
+
+.adminview_section {
+    position: relative;
+}
+
+.adminview_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.adminview_viewtab_item,
+.generic_view {
+    background: var(--globalColor);
+    filter: drop-shadow(0px 9px 32px rgba(0, 0, 0, 0.1));
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+.adminview_viewtab_header {
+    padding: 20px 25px;
+    background: var(--mainColor);
+    border-radius: 5px;
+}
+
+.adminview_viewtab_header h1 {
+    font-size: 24px;
+    color: var(--globalColor);
+    font-weight: 500;
+}
+
+.adminview_viewtab {
+    padding: 20px 15px;
+}
+
+.adminview_viewtabBtn_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border: navajowhite;
+    flex-wrap: wrap;
+}
+
+.adminview_viewtabBtn {
+    cursor: pointer;
+    border: none;
+    display: block;
+    background: #E2E5E6 !important;
+    width: 100%;
+    padding: 20px 12px;
+    text-align: center;
+    box-shadow: 2px 10px 32px rgba(19, 112, 178, 0.12);
+    border-radius: 5px !important;
+    border: none !important;
+    outline: none !important;
+    font-size: 12px;
+    color: #3a3333;
+}
+
+.nav-tabs .adminview_viewtabBtn.nav-link.active {
+    border: none !important;
+    background: var(--globalColor) !important;
+}
+
+.adminview_viewtabcontent ul {
+    padding: 23px 0px;
+}
+
+.adminview_viewtabcontent ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.adminview_viewtabcontent ul li span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+.generic_view {
+    min-height: 396px;
+}
+
+.generic_viewcontent {
+    padding: 17px 20px;
+}
+
+.generic_view_title {
+    font-size: 24px;
+    color: var(--mainColor);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.generic_viewWrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.generic_view_dropdown {
+    width: 100%;
+}
+
+.generic_viewBtn_inner {
+    padding: 7px 10px;
+    border: 1px dashed #FDCE52;
+}
+
+.generic_viewBtn {
+    padding: 7px;
+    border: 1px dashed #FDCE52;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mainColor);
+
+}
+
+.genericViewToggle.generic_viewdropdown_list {
+    display: none;
+}
+
+.generic_viewdropdown_list {
+    padding: 10px 5px;
+    background: var(--globalColor);
+    filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+}
+
+.search_genericInput {
+    height: 33px;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px;
+    color: var(--textColor);
+    outline: none;
+    border: 1px solid var(--textColor);
+    margin-bottom: 5px;
+    background: var(--globalColor);
+}
+
+.generic_viewdropdown_list ul {
+    max-height: 200px;
+    overflow: auto;
+    min-height: 200px;
+}
+
+
+.generic_viewdropdown_list ul::-webkit-scrollbar {
+    width: 5px;
+}
+
+.generic_viewdropdown_list ul::-webkit-scrollbar-thumb {
+    background: var(--mainColor);
+    border-radius: 10px;
+}
+
+.generic_viewdropdown_list ul li {
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--mainColor);
+    margin-bottom: 5px;
+    background: var(--globalColor);
+    cursor: pointer;
+}
+
+.generic_viewdropdown_list ul li span {
+    font-size: 12px;
+    color: var(--mainColor);
+}
+
+.generic_viewtab {
+    width: 100%;
+}
+
+.generic_viewtab_item {
+    position: relative;
+}
+
+.generic_viewtabItem_table {
+    overflow-x: auto;
+    position: relative;
+}
+
+.generic_viewtabItem_table table {
+    min-width: 612px;
+    width: 100%;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.generic_viewtabItem_table table tr th,
+.generic_viewtabItem_table table tr td {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 7px 10px;
+    color: var(--textColor);
+}
+
+.generic_viewtabItem_table table tr th {
+    color: var(--mainColor);
+    font-weight: 700;
+}
+
+/* Supplier_details */
+
+.Supplier_details {
+    border-radius: 5px;
+    background: var(--globalColor);
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.1);
+
+}
+
+.Supplier_details_content {
+    padding: 20px 30px;
+}
+
+.section_heading {
+    margin-bottom: 15px;
+}
+
+.section_headingText {
+    font-size: 24px;
+    color: var(--mainColor);
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.SupplierDetails_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.SupplierDetails_card {
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.SupplierDetails_card_wrapper {
+    padding: 15px 25px;
+}
+
+.SupplierDetails_card_CompName {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--globalColor);
+    margin-bottom: 8px;
+}
+
+.supplierDetails_card_selalName,
+.supplierDetails_card_number {
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--globalColor);
+}
+
+
+.SupplierDetails_card_footer {
+    margin-top: 10px;
+}
+
+
+.SupplierDetails_cardBtn_wraqpper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.SupplierDetails_cardBtn {
+    display: grid;
+    place-content: center;
+    width: 33px;
+    height: 22px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.SupplierDetails_cardBtn button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    outline: none;
+    background: transparent;
+}
+
+.SupplierDetails_cardBtn button svg {
+    display: flex;
+}
