@@ -375,14 +375,16 @@
 
 }
 
-.genericViewToggle.generic_viewdropdown_list {
-    display: none;
-}
 
 .generic_viewdropdown_list {
     padding: 10px 5px;
     background: var(--globalColor);
     filter: drop-shadow(0px 10px 32px rgba(0, 0, 0, 0.1));
+    display: none;
+}
+
+.genericViewToggle.generic_viewdropdown_list {
+    display: block;
 }
 
 .search_genericInput {
@@ -401,6 +403,7 @@
     max-height: 200px;
     overflow: auto;
     min-height: 200px;
+    display: block;
 }
 
 
@@ -422,6 +425,7 @@
     margin-bottom: 5px;
     background: var(--globalColor);
     cursor: pointer;
+    width: 100%;
 }
 
 .generic_viewdropdown_list ul li span {
