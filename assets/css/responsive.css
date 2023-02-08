@@ -40,6 +40,11 @@
     .SupplierDetails_card {
         width: calc(25% - 9px);
     }
+
+    .section_headingText {
+        font-size: 24px;
+    }
+
 }
 
 @media(min-width: 1024px) {
@@ -71,6 +76,9 @@
         width: calc(20% - 10px);
     }
 
+    .add_forminput_item {
+        width: calc(50% - 12px);
+    }
 }
 
 @media(min-width: 1400px) {
