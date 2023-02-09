@@ -603,7 +603,6 @@
     color: rgba(19, 112, 178, 0.51);
 }
 
-
 .add_forminput_inner input::placeholder {
     font-size: 18px;
     text-align: left;
@@ -625,6 +624,7 @@ select {
     background-image: url(../image/select.png) !important;
     background-repeat: no-repeat !important;
     background-position: 97% 50% !important;
+    background-size: 16px !important;
 }
 
 /* file */
@@ -808,4 +808,115 @@ option {
 
 .view_SupplierTable .admin_table {
     min-width: 1000px;
+}
+
+.section_heading_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px 20px;
+}
+
+.section_heading_title {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.medicineOrder_search {
+    max-width: 300px;
+    width: 100%;
+}
+
+.medicineOrder_search_inner {
+    width: 100%;
+}
+
+.medicineOrder_search_inner input {
+    border: 2px solid #FE8D7B;
+    border-radius: 5px;
+}
+
+.medicineOrder_search_inner input::placeholder {
+    color: rgb(112 112 112 / 20%);
+}
+
+/* medicine order wrapper */
+
+.medicine_order_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+
+}
+
+.medicine_order_item {
+    width: 100%;
+    position: relative;
+}
+
+.medicine_content_content {
+    padding: 20px 20px 60px;
+    border-radius: 5px;
+    background: var(--globalColor);
+    box-shadow: 0px 10px 32px rgba(0, 0, 0, 0.1);
+}
+
+.medicine_orderItem_image {
+    width: 90px;
+    margin: 0px auto 20px;
+}
+
+.medicine_orderItem_image img {
+    width: 100%;
+    display: block;
+}
+
+.medicineOrder_name {
+    font-size: 16px;
+    text-align: left;
+    color: var(--textColor);
+    text-align: center;
+
+}
+
+.medicineOrder_button {
+    text-align: center;
+    position: relative;
+    margin-top: -25px;
+}
+
+.medicineOrder_buttonInner {
+    display: inline-block;
+}
+
+.medicineOrder_buttonInner button {
+    border: 1px solid transparent;
+    outline: none;
+    background: var(--mainColor);
+    padding: 12px 30px;
+    border-radius: 5px;
+    color: var(--globalColor);
+}
+
+.medicine_orderList {
+    max-width: 100%;
+}
+
+.medicine_orderList .admin_table {
+    min-width: 920px;
+}
+
+.productSort_table {
+    max-width: 100%;
+}
+
+.productSort_table .admin_table {
+    min-width: 1232px;
+}
+
+.productSort_table .admin_table tr:nth-child(odd) td {
+    color: red;
 }

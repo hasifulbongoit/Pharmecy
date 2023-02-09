@@ -22,6 +22,15 @@
     .SupplierDetails_card {
         width: calc(33.33% - 8px);
     }
+
+    .section_heading_wrapper {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .medicine_order_item {
+        width: calc(50% - 12px);
+    }
 }
 
 @media(min-width: 768px) {
@@ -43,6 +52,14 @@
 
     .section_headingText {
         font-size: 24px;
+    }
+
+    .medicineOrder_search {
+        max-width: 430px;
+    }
+
+    .medicine_order_item {
+        width: calc(33.33% - 16px);
     }
 
 }
@@ -79,6 +96,10 @@
     .add_forminput_item {
         width: calc(50% - 12px);
     }
+
+    .medicine_order_item {
+        width: calc(25% - 18px);
+    }
 }
 
 @media(min-width: 1400px) {
@@ -92,6 +113,10 @@
 
     .SupplierDetails_wrapper {
         gap: 24px;
+    }
+
+    .medicine_order_item {
+        width: calc(20% - 20px);
     }
 }
 
